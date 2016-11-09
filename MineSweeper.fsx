@@ -43,6 +43,9 @@ module Win =
   let dimensions () =
     canvas.width, canvas.height
 
+let (w,h) = Win.dimensions() 
 
 
-
+Win.filled (Win.rgb 128 30 128) (0.0,0.0,w,h)
+Win.filled (Win.rgb 0 0 0) (0.0,0.0,100.0,60.0)
+Win.filled (Win.rgb 0 0 0) (w - 100.0,0.0,100.0,60.0)

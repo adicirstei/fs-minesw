@@ -1,9 +1,10 @@
 {
-    "module": "amd",
+    "module": "commonjs",
     "sourceMaps": true,
     "projFile": "./MineSweeper.fsx",
     "outDir": "docs",
     "scripts": {
-        "prebuild": "npm install"
+        "prebuild": "npm install",
+        "postbuild": "browserify docs/app.js -o docs/app.build.js"
     }
 }
