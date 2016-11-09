@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "compile": "fable MineSweeper.fsx"
+    "compile": "fable MineSweeper.fsx -o docs -s true"
   },
   "devDependencies": {
-    "fable-compiler": "^0.6.15"
+    "fable-compiler": "^0.6.15",
+    "fable-core": "^0.6.10"
   }
 }
